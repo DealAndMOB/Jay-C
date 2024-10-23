@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatMaker Studio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">BeatMaker Studio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beats">Beats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#studio">Estudio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 text-white mb-4">Creando el sonido del futuro</h1>
+                    <p class="lead text-white mb-4">Beats únicos y producciones profesionales para tu música</p>
+                    <a href="#beats" class="btn btn-primary btn-lg neon-button">Explorar Beats</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Servicios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-music"></i>
+                        <h3>Producción Musical</h3>
+                        <p>Producción profesional de música con equipos de alta calidad</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-microphone"></i>
+                        <h3>Grabación</h3>
+                        <p>Sesiones de grabación en estudio profesional</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <i class="fas fa-sliders-h"></i>
+                        <h3>Mezcla y Masterización</h3>
+                        <p>Dale el toque final profesional a tu música</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beats Section -->
+    <section id="beats" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Beats Disponibles</h2>
+            <div class="row" id="beats-container">
+                <!-- Las cards de beats se generarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+<!-- Studio Location Section -->
+<section id="studio" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestro Estudio</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="studio-info">
+                    <h3>Ubicación</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Principal #123, Ciudad</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope"></i> contacto@beatmaker.com</p>
+                    <p class="mt-4">Horario de atención:</p>
+                    <ul class="list-unstyled">
+                        <li><i class="far fa-clock me-2"></i>Lunes a Viernes: 10:00 AM - 8:00 PM</li>
+                        <li><i class="far fa-clock me-2"></i>Sábados: 11:00 AM - 6:00 PM</li>
+                        <li><i class="far fa-clock me-2"></i>Domingos: Cerrado</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9728971208756!2d-74.07882492474705!3d4.598916042504578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7147877c9%3A0x378b95e9f1f4d2a0!2sCentro%20de%20Bogot%C3%A1%2C%20Bogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2s!4v1698104548674!5m2!1ses!2s"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4>BeatMaker Studio</h4>
+                    <p>Creando el sonido del futuro</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-soundcloud"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Contacto</h4>
+                    <p>contacto@beatmaker.com</p>
+                    <p>+1 234 567 890</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
